@@ -1,0 +1,42 @@
+#hero {
+  width: 100vw;
+}
+
+.primary-text {
+  color: #fc9d1e;
+}
+
+.contact-hero {
+  width: 100vw;
+  height: 70vh;
+}
+
+.btn-primary {
+  background-color: #fc9d1e !important;
+  color: #fff;
+}
+
+.dash {
+  content: "";
+  width: 120px;
+  height: 7px;
+  background-color: #fc9d1e;
+  margin-top: 20px;
+}
+
+.core-values-card {
+  padding: 16px 0px;
+  border: 1px solid rgba(200, 193, 181, 0.67);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.core-values-images {
+  width: 71px;
+  height: 71px;
+}
