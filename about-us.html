@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -42,7 +43,19 @@
         </div>
 
         <div class="block lg:hidden flex justify-end items-end">
-            <button class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
+            <button id="menuButton" class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
+
+            <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+                <a href="index.html" class="block primary-text text-xl py-4">Home</a>
+                <a href="about-us.html" class="block primary-text text-xl py-4">About</a>
+                <a href="services.html" class="block primary-text text-xl py-4">Services</a>
+                <a href="contact-us.html" class="block primary-text text-xl py-4">Contact</a>
+                <a href="leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
+                <button id="closeMenu" class="text-white absolute top-4 right-4">
+                    <!-- Close Icon (X) -->
+                    <i class="ri-close-fill primary-text text-3xl"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -98,36 +111,56 @@
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/value-creation.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Value Creation</p>
+                    <p>We always engage in mutually reinforcing relationships that lead to enhanced benefits through
+                        optimization of costs and
+                        improvement of revenues.</p>
                 </div>
 
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/integrity-and-ethical.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Integrity & Ethical</p>
+                    <p>We always are intentionally consistent when it concerns honesty, equity, truthfulness, accuracy
+                        and adherence to rules
+                        and regulations.</p>
                 </div>
 
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/environmental.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Environment</p>
+                    <p>We always conduct our business with the believe that the environment has to be protected and made
+                        sustainable for the
+                        future. We will be involved in activities that both minimize carbon discharge to the environment
+                        and enhance the quality
+                        of the environment.</p>
                 </div>
 
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/social-impact.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Social Impact</p>
+                    <p>We always are socially responsive in the environments we do business by consciously responding to
+                        the reasonable developmental needs of the stakeholders around us.</p>
                 </div>
 
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/personal-growth.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Personal Growth & Development</p>
+                    <p>We always demonstrate commitment to the advancement of the job knowledge and skills of our
+                        people, and the people of our
+                        clients and partners.</p>
                 </div>
 
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/excellence.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Excellence</p>
+                    <p>We always have passion for excellence in people, processes and technology.</p>
                 </div>
 
                 <div class="col-span-12 md:col-span-4 lg:col-span-4 core-values-card">
                     <img src="assets/diversity.png" alt="" class="core-values-images my-5" />
                     <p class="text-lg font-semibold">Diversity & Inclusion</p>
+                    <p>We always ensure that our work environment is deliberately diverse, intentionally inclusive and
+                        respectful of all
+                        stakeholders.</p>
                 </div>
             </div>
         </div>
@@ -136,39 +169,47 @@
     <div class="p-5 lg:p-20" style="background-color: rgba(252, 252, 252, 1);">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 lg:col-span-8 p-2 lg:p-10 order-2 lg:order-1">
-                <p class="">
-                    Micusta Concerns Ltd is a forward-thinking company dedicated to driving industry excellence through
+                <p class="my-2">
+                    <span class="font-semibold">Micusta Concerns Ltd</span> is a forward-thinking company dedicated to
+                    driving industry
+                    excellence through
                     innovation and
                     professionalism.
+                </p>
 
-                    We adopt appropriate ethical behaviours and deploy the right tools and human skills to solve
+                <p class="my-2">We adopt appropriate ethical behaviours and deploy the right tools and human skills to
+                    solve
                     challenges efficiently and
                     effectively. We position ourselves to enable our clients advance their economic and social
                     performance objectives in
-                    win-win ways.
+                    win-win ways.</p>
 
-                    With deep expertise across Corporate Financing, Supply Chain Management, Civil Construction and
+                <p class="my-2">With deep expertise across Corporate Financing, Supply Chain Management, Civil
+                    Construction and
                     Intermediation, we
                     understand the complexities of today’s industries and bring together a team of seasoned
                     professionals to address them
-                    uniquely.
+                    uniquely.</p>
 
-                    Our identity is shaped by more than just experience; it’s our ability to anticipate industry shifts
+                <p class="my-2">Our identity is shaped by more than just experience; it’s our ability to anticipate
+                    industry shifts
                     and adapt with
                     agility. Our mission is to empower our clients with the right tools, human skills, and global best
                     practices to solve
                     complex challenges, achieve performance goals, and enhance their economic and social standing in
                     ways that benefit all
-                    stakeholders.
+                    stakeholders.</p>
 
-                    Our leadership team’s diverse backgrounds enable us to approach each challenge with a unique
+                <p class="my-2">Our leadership team’s diverse backgrounds enable us to approach each challenge with a
+                    unique
                     perspective, ensuring we
                     deliver solutions that are both strategic and effective. We pride ourselves on being a trusted
                     partner in evolving
                     industries, with clients relying on our expertise to navigate complexities with confidence and
-                    foresight.
+                    foresight.</p>
 
-                    At Micusta, we are partners who understand that success is driven by foresight, integrity, and the
+                <p class="my-2">At Micusta, we are partners who understand that success is driven by foresight,
+                    integrity, and the
                     ability to deliver
                     results.
                 </p>
@@ -212,15 +253,20 @@
                 <p class="my-4">
                     At Micusta, we believe that our people are the foundation of our success.
                     Our commitment to
-                    our team is reflected in the following core values: People at the Core: Our employees are the heart
+                    our team is reflected in the following core values: </p>
+                <p class="my-2"><span class="font-semibold">People at the Core:</span> Our employees are the heart
                     of our business,
-                    driving innovation and excellence every day. Diversity and Inclusion: We respect and embrace
+                    driving innovation and excellence every day.</p>
+                <p class="my-2"><span class="font-semibold">Diversity and Inclusion:</span> We respect and embrace
                     diversity, fostering an
-                    inclusive culture where every individual is valued and empowered. Skills Development: We invest in
+                    inclusive culture where every individual is valued and empowered.</p>
+                <p class="my-2"><span class="font-semibold">Skills Development:</span> We invest in
                     our people, ensuring
                     they have the right skills to succeed and grow through continuous training and professional
-                    development. Safety and
-                    Well-Being: The safety of our people is paramount, and we are dedicated to maintaining a secure,
+                    development.</p>
+                <p class="my-2"><span class="font-semibold">Safety and
+                        Well-Being:</span> The safety of our people is paramount, and we are dedicated to maintaining a
+                    secure,
                     healthy, and supportive
                     work environment at all times.
                 </p>
@@ -238,13 +284,18 @@
                 <p class="my-4">
                     At Micusta, we are committed to fostering a culture of innovation and
                     continuous
-                    improvement. Our strategy includes: Fostering Innovation: We build a culture of innovation through
+                    improvement. Our strategy includes: </p>
+                <p class="my-2"><span class="font-semibold">Fostering Innovation:</span> We build a culture of
+                    innovation through
                     regular brainstorming
-                    and ideation sessions, encouraging fresh ideas and creative problem-solving. Collaboration and
-                    Networking: We actively
+                    and ideation sessions, encouraging fresh ideas and creative problem-solving.</p>
+                <p class="my-2"><span class="font-semibold">Collaboration and
+                        Networking:</span> We actively
                     promote networking and collaboration with industry experts, professional groups, and trade
                     associations to stay ahead of
-                    industry trends and drive innovation. Outsourcing for Value Creation: To enhance value creation, we
+                    industry trends and drive innovation.</p>
+                <p class="my-2"><span class="font-semibold">Outsourcing for Value Creation:</span> To enhance value
+                    creation, we
                     strategically
                     outsource activities to experts, ensuring that every project benefits from specialized knowledge and
                     expertise.
@@ -259,19 +310,23 @@
                 <img src="assets/growth.png" alt="" class="" />
             </div>
             <div class="col-span-12 lg:col-span-8 p-2 lg:p-10">
-                <p class="text-3xl font-semibold">Our Technology-Driven Approach</p>
+                <p class="text-3xl font-semibold">Cost Efficiency</p>
                 <p class="my-4">
-                    At Micusta, we recognize the critical role of IT in delivering
-                    effective and secure
-                    solutions. Our approach to technology includes: IT as a Key Driver: Information technology is
-                    central to the solutions
-                    we provide, driving efficiency, innovation, and excellence in service delivery. Optimized IT
-                    Platforms: Our IT platforms
-                    are designed to ensure we select the right software and tools to meet the specific needs of our
-                    clients and operations.
-                    Comprehensive Security: We prioritize security across all our IT platforms, ensuring robust
-                    protection for our business
-                    and extending security measures to safeguard our partners and clients.
+                    At Micusta, we are dedicated to maintaining high standards of efficiency and compliance in
+                    everything we do. Our
+                    approach includes</p>
+                <p class="my-2"><span class="font-semibold"> Competitive Procurement:</span>We engage in competitive
+                    procurement practices to ensure the best value for our clients and partners. </p>
+                <p class="my-2"><span class="font-semibold">Cost Benchmarking:</span> We continuously benchmark our
+                    activities to optimize costs and improve financial efficiency.</p>
+                <p class="my-2"><span class="font-semibold">Internal Control and Compliance:</span>We maintain a robust
+                    internal control and compliance system to ensure operational integrity and accountability.
+                </p>
+                <p class="my-2"><span class="font-semibold">Staff Optimization:</span>We right-size our workforce and
+                    optimize working assets to maximize productivity and minimize waste.
+                </p>
+                <p class="my-2"><span class="font-semibold">Legal and Regulatory Compliance:</span>We adhere to all
+                    applicable laws and regulations, ensuring our operations are fully compliant at all times.
                 </p>
             </div>
         </div>
@@ -285,21 +340,21 @@
             <div class="col-span-12 lg:col-span-8 p-2 lg:p-10">
                 <p class="text-3xl font-semibold">Our Technology-Driven Approach</p>
                 <p class="my-4">
-                    At Micusta, we recognize the critical role of IT in delivering effective and secure solutions. Our
-                    approach to
-                    technology includes:
-
-                    IT as a Key Driver: Information technology is central to the solutions we provide, driving
-                    efficiency, innovation, and
-                    excellence in service delivery.
-
-                    Optimized IT Platforms: Our IT platforms are designed to ensure we select the right software and
-                    tools to meet the
-                    specific needs of our clients and operations.
-
-                    Comprehensive Security: We prioritize security across all our IT platforms, ensuring robust
+                    At Micusta, we recognize the critical role of IT in delivering
+                    effective and secure
+                    solutions. Our approach to technology includes:</p>
+                <p class="my-2"><span class="font-semibold"> IT as a Key
+                        Driver:</span> Information technology is
+                    central to the solutions
+                    we provide, driving efficiency, innovation, and excellence in service delivery. </p>
+                <p class="my-2"><span class="font-semibold">Optimized IT
+                        Platforms:</span> Our IT platforms
+                    are designed to ensure we select the right software and tools to meet the specific needs of our
+                    clients and operations.</p>
+                <p class="my-2"><span class="font-semibold">Comprehensive Security:</span> We prioritize security across
+                    all our IT platforms, ensuring robust
                     protection for our business
-                    and extending security measures to safeguard our partners and clients.
+                    and extending security measures to safeguard our partners and clients.</p>
                 </p>
             </div>
         </div>
@@ -312,7 +367,7 @@
         <div class="p-5 lg:p-10 grid grid-cols-12 gap-5">
             <div class="col-span-12 lg:col-span-4">
                 <a href="/" class="cursor-pointer">
-                    <svg width="153" height="63" viewBox="0 0 200 83" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="253" height="163" viewBox="0 0 200 83" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect x="6.87451" y="0.856934" width="188.981" height="60.6429" fill="url(#pattern0_5_959)" />
                         <path
@@ -345,6 +400,12 @@
                 <div class="w-36">
                     <a href="contact-us.html" class="btn-primary p-3 rounded-xl flex items-center gap-4">Contact Us<i
                             class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="flex gap-5 my-5">
+                    <a href="#"><i class="ri-facebook-box-fill text-2xl"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill text-2xl"></i></a>
+                    <a href="#"><i class="ri-instagram-line text-2xl"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill text-2xl"></i></a>
                 </div>
             </div>
         </div>

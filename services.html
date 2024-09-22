@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -42,7 +43,19 @@
         </div>
 
         <div class="block lg:hidden flex justify-end items-end">
-            <button class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
+            <button id="menuButton" class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
+
+            <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+                <a href="index.html" class="block primary-text text-xl py-4">Home</a>
+                <a href="about-us.html" class="block primary-text text-xl py-4">About</a>
+                <a href="services.html" class="block primary-text text-xl py-4">Services</a>
+                <a href="contact-us.html" class="block primary-text text-xl py-4">Contact</a>
+                <a href="leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
+                <button id="closeMenu" class="text-white absolute top-4 right-4">
+                    <!-- Close Icon (X) -->
+                    <i class="ri-close-fill primary-text text-3xl"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -361,7 +374,7 @@
         <div class="p-5 lg:p-10 grid grid-cols-12 gap-5">
             <div class="col-span-12 lg:col-span-4">
                 <a href="/" class="cursor-pointer">
-                    <svg width="153" height="63" viewBox="0 0 200 83" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    <svg width="253" height="163" viewBox="0 0 200 83" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect x="6.87451" y="0.856934" width="188.981" height="60.6429" fill="url(#pattern0_5_959)" />
                         <path
@@ -393,6 +406,12 @@
                 <div class="w-36">
                     <a href="contact-us.html" class="btn-primary p-3 rounded-xl flex items-center gap-4">Contact Us<i
                             class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="flex gap-5 my-5">
+                    <a href="#"><i class="ri-facebook-box-fill text-2xl"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill text-2xl"></i></a>
+                    <a href="#"><i class="ri-instagram-line text-2xl"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill text-2xl"></i></a>
                 </div>
             </div>
         </div>
