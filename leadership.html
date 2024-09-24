@@ -32,25 +32,25 @@
         </a>
 
         <ul class="hidden lg:block lg:flex gap-5 cursor-pointer">
-            <li><a href="/">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="leadership.html">Key Persons</a></li>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/about-us.html" class="nav-link">About Us</a></li>
+            <li><a href="/services.html" class="nav-link">Services</a></li>
+            <li><a href="/leadership.html" class="nav-link">Key Persons</a></li>
         </ul>
 
         <div class="hidden lg:block">
-            <a href="contact-us.html" class="btn-primary text-[#FFF] p-3 rounded-2xl">Contact Us</a>
+            <a href="/contact-us.html" class="btn-primary text-[#FFF] p-3 rounded-2xl">Contact Us</a>
         </div>
 
         <div class="block lg:hidden flex justify-end items-end">
             <button id="menuButton" class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
 
             <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-                <a href="index.html" class="block primary-text text-xl py-4">Home</a>
-                <a href="about-us.html" class="block primary-text text-xl py-4">About</a>
-                <a href="services.html" class="block primary-text text-xl py-4">Services</a>
-                <a href="contact-us.html" class="block primary-text text-xl py-4">Contact</a>
-                <a href="leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
+                <a href="/index.html" class="block primary-text text-xl py-4">Home</a>
+                <a href="/about-us.html" class="block primary-text text-xl py-4">About</a>
+                <a href="/services.html" class="block primary-text text-xl py-4">Services</a>
+                <a href="/leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
+                <a href="/contact-us.html" class="block primary-text text-xl py-4">Contact</a>
                 <button id="closeMenu" class="text-white absolute top-4 right-4">
                     <!-- Close Icon (X) -->
                     <i class="ri-close-fill primary-text text-3xl"></i>
@@ -59,7 +59,7 @@
         </div>
     </nav>
 
-    <div class="px-5 lg:px-28 my-5">
+    <div class="px-2 lg:px-28 my-5">
         <p class="text-2xl md:text-3xl lg:text-4xl font-semibold">Meet Our Leadership</p>
         <p class="text-sm my-5">Our experienced leadership team drives our vision with strategic insight and
             dedication, and<br /> ensures outstanding results
@@ -67,11 +67,11 @@
         <div class="dash"></div>
     </div>
 
-    <div class="px-5 lg:px-20">
+    <div class="px-2 lg:px-20">
         <div>
             <div class="grid grid-cols-12 gap-x-5">
-                <div class="col-span-12 md:col-span-4 lg:col-span-3 p-10 flex flex-col items-start">
-                    <img src="assets/ceo.png" alt="" class="w-52 h-52 rounded-2xl" />
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 p-5 lg:p-10 flex flex-col items-start">
+                    <img src="assets/ceo.png" alt="" class="w-full h-64 rounded-2xl self-center" />
                     <div class="p-3 flex flex-col gap-2">
                         <p class="text-xl font-semibold">Owen Altraide</p>
                         <p class="text-xs font-semibold">Chairman/Chief Executive Officer</p>
@@ -79,7 +79,7 @@
                 </div>
                 <div
                     class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start my-2 lg:my-10 px-10">
-                    <p class="text-sm">
+                    <p class="text-sm text-justify">
                         Owen Altraide is a Harvard trained Public Policy expert with a Masters in Public Administration
                         with specialization in
                         Financial Institutions and Macroeconomics. He was an Edward Mason Fellow of Public Policy and
@@ -124,11 +124,11 @@
         </div>
     </div>
 
-    <div class="px-5 lg:px-20" style="background-color: rgba(244, 244, 244, 1);">
+    <div class="px-2 lg:px-20" style="background-color: rgba(244, 244, 244, 1);">
         <div>
             <div class="grid grid-cols-12 gap-x-5">
-                <div class="col-span-12 md:col-span-4 lg:col-span-3 p-10 flex flex-col items-start">
-                    <img src="assets/advisor_operations.png" alt="" class="w-52 h-52 rounded-2xl" />
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 p-5 lg:p-10 flex flex-col items-start">
+                    <img src="assets/advisor_operations.png" alt="" class="w-full h-64 rounded-2xl self-center" />
                     <div class="p-3 flex flex-col gap-2">
                         <p class="text-xl font-semibold">Martins Udeh</p>
                         <p class="text-xs font-semibold">Advisor on Operations</p>
@@ -136,7 +136,7 @@
                 </div>
                 <div
                     class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start my-2 lg:my-10 px-10">
-                    <p class="text-sm">
+                    <p class="text-sm text-justify">
                         Martin Osita Udeh, is an Advisor on Operations to Micusta Concerns Ltd. He attended the Business
                         Management program of
                         The University of Bolton, UK. Martin has vast knowledge of Marine Logistics, having served as
@@ -186,11 +186,12 @@
         </div>
     </div>
 
-    <div class="px-5 lg:px-20">
+    <div class="px-2 lg:px-20">
         <div>
             <div class="grid grid-cols-12 gap-x-5">
-                <div class="col-span-12 md:col-span-4 lg:col-span-3 p-10 flex flex-col items-start">
-                    <img src="assets/advisor_business_development.png" alt="" class="w-52 h-52 rounded-2xl" />
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 p-5 lg:p-10 flex flex-col items-start">
+                    <img src="assets/advisor_business_development.png" alt=""
+                        class="w-full h-64 rounded-2xl self-center" />
                     <div class="p-3 flex flex-col gap-2">
                         <p class="text-xl font-semibold">Ijoma Okonya Onumonu</p>
                         <p class="text-xs font-semibold">Advisor on Business Development</p>
@@ -198,7 +199,7 @@
                 </div>
                 <div
                     class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start my-2 lg:my-10 px-10">
-                    <p class="text-sm">
+                    <p class="text-sm text-justify">
                         Ijoma Okonya Onumonu is an Advisor on Business Development to Micusta Concerns Ltd. He holds a
                         Bachelor’s degree in
                         Agricultural Economics from the University of Nigeria, and is a seasoned financial and policy
@@ -268,9 +269,9 @@
             <div class="col-span-6 lg:col-span-4">
                 <p class="text-lg font-semibold">Quick Links</p>
                 <div class="flex flex-col gap-5 my-5">
-                    <a href="services.html">Services</a>
-                    <a href="about-us.html">About-us</a>
-                    <a href="leadership.html">Key Persons</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/about-us.html" class="nav-link">About-us</a>
+                    <a href="/leadership.html" class="nav-link">Key Persons</a>
                 </div>
             </div>
             <div class="col-span-6 lg:col-span-4 flex flex-col gap-4">
@@ -279,7 +280,7 @@
                     sales or support representatives
                     will contact you shortly.</p>
                 <div class="w-36">
-                    <a href="contact-us.html" class="btn-primary p-3 rounded-xl flex items-center gap-4">Contact Us<i
+                    <a href="/contact-us.html" class="btn-primary p-3 rounded-xl flex items-center gap-4">Contact Us<i
                             class="ri-arrow-right-line"></i></a>
                 </div>
                 <div class="flex gap-5 my-5">

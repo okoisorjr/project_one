@@ -32,10 +32,10 @@
         </a>
 
         <ul class="hidden lg:block lg:flex gap-5 cursor-pointer">
-            <li><a href="/">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="leadership.html">Key Persons</a></li>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/about-us.html" class="nav-link">About Us</a></li>
+            <li><a href="/services.html" class="nav-link">Services</a></li>
+            <li><a href="/leadership.html" class="nav-link">Key Persons</a></li>
         </ul>
 
         <div class="hidden lg:block">
@@ -46,11 +46,11 @@
             <button id="menuButton" class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
 
             <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-                <a href="index.html" class="block primary-text text-xl py-4">Home</a>
-                <a href="about-us.html" class="block primary-text text-xl py-4">About</a>
-                <a href="services.html" class="block primary-text text-xl py-4">Services</a>
-                <a href="contact-us.html" class="block primary-text text-xl py-4">Contact</a>
-                <a href="leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
+                <a href="/index.html" class="block primary-text text-xl py-4">Home</a>
+                <a href="/about-us.html" class="block primary-text text-xl py-4">About</a>
+                <a href="/services.html" class="block primary-text text-xl py-4">Services</a>
+                <a href="/leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
+                <a href="/contact-us.html" class="block primary-text text-xl py-4">Contact</a>
                 <button id="closeMenu" class="text-white absolute top-4 right-4">
                     <!-- Close Icon (X) -->
                     <i class="ri-close-fill primary-text text-3xl"></i>
@@ -184,10 +184,10 @@
     <div style="width: 100vw; position: relative; background-color: #E7E9ED;"
         class="h-56 md:h-96 lg:h-96 flex flex-col items-start justify-center">
         <img src="assets/contact-img.png" alt="banner-image"
-            style="width: 50vw; height: inherit; position: absolute; right: 0; background-color: inherit;"
-            class="w-full" />
+            style="width: 50vw; position: absolute; right: 0; bottom: 0; background-color: inherit;"
+            class="w-full h-40 lg:h-96" />
         <div class="absolute flex flex-col items-start justify-center px-5 md:px-10 lg:px-20">
-            <p class="text-lg md:text-3xl lg:text-3xl font-normal">Let's discuss how we can help<br />
+            <p class="text-sm md:text-3xl lg:text-3xl font-normal">Let's discuss how we can help<br />
                 drive
                 growth and
                 innovation
@@ -196,7 +196,7 @@
                 <div class="dash"></div>
             </div>
             <div class="my-5">
-                <a href="contact-us.html" class="btn-primary p-3 rounded-xl flex items-center gap-4">Contact Us<i
+                <a href="contact-us.html" class="btn-primary p-2 lg:p-3 rounded-xl flex items-center gap-4">Contact Us<i
                         class="ri-arrow-right-line"></i></a>
             </div>
         </div>
