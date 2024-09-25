@@ -31,11 +31,11 @@
             </svg>
         </a>
 
-        <ul class="hidden lg:block lg:flex gap-5 cursor-pointer">
-            <li><a href="/" class="nav-link">Home</a></li>
-            <li><a href="/about-us.html" class="nav-link hover:primary-text">About Us</a></li>
-            <li><a href="/services.html" class="nav-link hover:primary-text">Services</a></li>
-            <li><a href="/leadership.html" class="nav-link hover:primary-text">Key Persons</a></li>
+        <ul class="hidden lg:block lg:flex gap-x-10 cursor-pointer">
+            <li><a href="/" class="nav-link font-bold">Home</a></li>
+            <li><a href="/about-us.html" class="nav-link font-bold hover:primary-text">About Us</a></li>
+            <li><a href="/services.html" class="nav-link font-bold hover:primary-text">Services</a></li>
+            <li><a href="/leadership.html" class="nav-link font-bold hover:primary-text">Key Persons</a></li>
         </ul>
 
         <div class="hidden lg:block">
@@ -46,11 +46,11 @@
             <button id="menuButton" class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
 
             <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-                <a href="/index.html" class="block primary-text text-xl py-4">Home</a>
-                <a href="/about-us.html" class="block primary-text text-xl py-4">About</a>
-                <a href="/services.html" class="block primary-text text-xl py-4">Services</a>
-                <a href="/leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
-                <a href="/contact-us.html" class="block primary-text text-xl py-4">Contact</a>
+                <a href="/index.html" class="block primary-text text-xl py-4 font-bold">Home</a>
+                <a href="/about-us.html" class="block primary-text text-xl py-4 font-bold">About</a>
+                <a href="/services.html" class="block primary-text text-xl py-4 font-bold">Services</a>
+                <a href="/leadership.html" class="block primary-text text-xl py-4 font-bold">Key Persons</a>
+                <a href="/contact-us.html" class="block primary-text text-xl py-4 font-bold">Contact</a>
                 <button id="closeMenu" class="text-white absolute top-4 right-4">
                     <!-- Close Icon (X) -->
                     <i class="ri-close-fill primary-text text-3xl"></i>
@@ -65,7 +65,7 @@
         <div class="absolute top-50 left-10 lg:left-20 flex flex-col align-middle items-start justify-center">
             <p class="text-xl md:text-3xl lg:text-5xl text-white font-semibold">Our Services
             </p>
-            <p class="text-sm lg:text-2xl italic font-light text-white my-3">We provide customized solutions across
+            <p class="text-xs lg:text-2xl italic font-light text-white my-3">We provide customized solutions across
                 various sectors, focusing on innovation efficiency,<br /> and impactful results.</p>
             <div class="mt-5">
                 <a href="contact-us.html" class="btn-primary p-2 rounded-xl w-50 flex gap-4 items-center">Contact Us<i
@@ -308,12 +308,16 @@
         </div>
     </div>
 
-    <div style="width: 100vw;">
-        <img src="assets/sectoral-focus.png" alt="banner-image" style="height: inherit;" />
+    <div style="width: 100vw; height: 50vh; background-color: #F9F8F6;" class="flex flex-col justify-center">
+        <!-- <img src="assets/sectoral-focus.png" alt="banner-image" style="height: inherit;" /> -->
+        <div class="flex flex-col gap-5 mx-16">
+            <p class="text-4xl lg:text-5xl font-bold">Sectoral Focus</p>
+            <div class="dash"></div>
+        </div>
     </div>
 
     <div class="p-5 lg:p-20">
-        <div class="grid grid-cols-12 gap-5">
+        <div class="grid grid-cols-12 gap-5 lg:gap-16">
             <div class="flex flex-col col-span-12 md:col-span-6 lg:col-span-4">
                 <img src="assets/mining.png" alt="" class="w-full h-64" />
                 <p class="my-5 text-2xl font-semibold">Mining (Oil And Gas)</p>
@@ -400,7 +404,8 @@
             </div>
             <div class="col-span-6 lg:col-span-4 flex flex-col gap-4">
                 <p class="text-lg font-semibold">Get in Touch</p>
-                <p class="text-sm">Let us know how we can help you with your existing or future projects, and one of our
+                <p class="text-xs lg:text-sm">Let us know how we can help you with your existing or future projects, and
+                    one of our
                     sales or support representatives
                     will contact you shortly.</p>
                 <div class="w-36">
@@ -419,10 +424,11 @@
     <hr />
     <div class="flex items-center justify-center p-5">
         <div class="flex items-center justify-between gap-20">
-            <p class="text-sm font-semibold">Copyright Micusa Concerns Ltd @ 2024 &copy; All Rights Reserved</p>
-            <div class="flex gap-10 text-[16px]">
-                <span>English</span>
-                <span>Lagos, Nigeria</span>
+            <p class="text-xs lg:text-sm font-semibold">Copyright Micusa Concerns Ltd @ 2024 &copy; All Rights Reserved
+            </p>
+            <div class="flex gap-10 text-xs lg:text-sm">
+                <span><i class="ri-global-line mx-2"></i>English</span>
+                <span><i class="ri-map-pin-line mx-2"></i>Lagos, Nigeria</span>
             </div>
         </div>
     </div>

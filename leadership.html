@@ -31,11 +31,11 @@
             </svg>
         </a>
 
-        <ul class="hidden lg:block lg:flex gap-5 cursor-pointer">
-            <li><a href="/" class="nav-link">Home</a></li>
-            <li><a href="/about-us.html" class="nav-link">About Us</a></li>
-            <li><a href="/services.html" class="nav-link">Services</a></li>
-            <li><a href="/leadership.html" class="nav-link">Key Persons</a></li>
+        <ul class="hidden lg:block lg:flex gap-x-10 cursor-pointer">
+            <li><a href="/" class="nav-link font-bold">Home</a></li>
+            <li><a href="/about-us.html" class="nav-link font-bold">About Us</a></li>
+            <li><a href="/services.html" class="nav-link font-bold">Services</a></li>
+            <li><a href="/leadership.html" class="nav-link font-bold">Key Persons</a></li>
         </ul>
 
         <div class="hidden lg:block">
@@ -46,11 +46,11 @@
             <button id="menuButton" class="shadow-sm p-2"><i class="ri-menu-fill"></i></button>
 
             <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
-                <a href="/index.html" class="block primary-text text-xl py-4">Home</a>
-                <a href="/about-us.html" class="block primary-text text-xl py-4">About</a>
-                <a href="/services.html" class="block primary-text text-xl py-4">Services</a>
-                <a href="/leadership.html" class="block primary-text text-xl py-4">Key Persons</a>
-                <a href="/contact-us.html" class="block primary-text text-xl py-4">Contact</a>
+                <a href="/index.html" class="block primary-text text-xl py-4 font-bold">Home</a>
+                <a href="/about-us.html" class="block primary-text text-xl py-4 font-bold">About</a>
+                <a href="/services.html" class="block primary-text text-xl py-4 font-bold">Services</a>
+                <a href="/leadership.html" class="block primary-text text-xl py-4 font-bold">Key Persons</a>
+                <a href="/contact-us.html" class="block primary-text text-xl py-4 font-bold">Contact</a>
                 <button id="closeMenu" class="text-white absolute top-4 right-4">
                     <!-- Close Icon (X) -->
                     <i class="ri-close-fill primary-text text-3xl"></i>
@@ -69,16 +69,17 @@
 
     <div class="px-2 lg:px-20">
         <div>
-            <div class="grid grid-cols-12 gap-x-5">
+            <div class="grid grid-cols-12">
                 <div class="col-span-12 md:col-span-4 lg:col-span-3 p-5 lg:p-10 flex flex-col items-start">
-                    <img src="assets/ceo.png" alt="" class="w-full h-64 rounded-2xl self-center" />
+                    <div class="w-full">
+                        <img src="assets/ceo.png" alt="" class="rounded-3xl cursor-pointer hover:shadow-lg" />
+                    </div>
                     <div class="p-3 flex flex-col gap-2">
-                        <p class="text-xl font-semibold">Owen Altraide</p>
+                        <p class="text-lg font-semibold">Owen Altraide</p>
                         <p class="text-xs font-semibold">Chairman/Chief Executive Officer</p>
                     </div>
                 </div>
-                <div
-                    class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start my-2 lg:my-10 px-10">
+                <div class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start lg:my-10">
                     <p class="text-sm text-justify">
                         Owen Altraide is a Harvard trained Public Policy expert with a Masters in Public Administration
                         with specialization in
@@ -126,16 +127,18 @@
 
     <div class="px-2 lg:px-20" style="background-color: rgba(244, 244, 244, 1);">
         <div>
-            <div class="grid grid-cols-12 gap-x-5">
+            <div class="grid grid-cols-12">
                 <div class="col-span-12 md:col-span-4 lg:col-span-3 p-5 lg:p-10 flex flex-col items-start">
-                    <img src="assets/advisor_operations.png" alt="" class="w-full h-64 rounded-2xl self-center" />
+                    <div class="w-full">
+                        <img src="assets/advisor_operations.png" alt=""
+                            class="rounded-3xl cursor-pointer hover:shadow-lg" />
+                    </div>
                     <div class="p-3 flex flex-col gap-2">
-                        <p class="text-xl font-semibold">Martins Udeh</p>
+                        <p class="text-lg font-semibold">Martins Udeh</p>
                         <p class="text-xs font-semibold">Advisor on Operations</p>
                     </div>
                 </div>
-                <div
-                    class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start my-2 lg:my-10 px-10">
+                <div class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start lg:my-10">
                     <p class="text-sm text-justify">
                         Martin Osita Udeh, is an Advisor on Operations to Micusta Concerns Ltd. He attended the Business
                         Management program of
@@ -188,17 +191,18 @@
 
     <div class="px-2 lg:px-20">
         <div>
-            <div class="grid grid-cols-12 gap-x-5">
+            <div class="grid grid-cols-12">
                 <div class="col-span-12 md:col-span-4 lg:col-span-3 p-5 lg:p-10 flex flex-col items-start">
-                    <img src="assets/advisor_business_development.png" alt=""
-                        class="w-full h-64 rounded-2xl self-center" />
+                    <div class="w-full">
+                        <img src="assets/advisor_business_development.png" alt=""
+                            class="rounded-3xl cursor-pointer hover:shadow-lg" />
+                    </div>
                     <div class="p-3 flex flex-col gap-2">
-                        <p class="text-xl font-semibold">Ijoma Okonya Onumonu</p>
+                        <p class="text-lg font-semibold">Ijoma Okonya Onumonu</p>
                         <p class="text-xs font-semibold">Advisor on Business Development</p>
                     </div>
                 </div>
-                <div
-                    class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start my-2 lg:my-10 px-10">
+                <div class="col-span-12 md:col-span-8 lg:col-span-9 flex flex-col items-start justify-start lg:my-10">
                     <p class="text-sm text-justify">
                         Ijoma Okonya Onumonu is an Advisor on Business Development to Micusta Concerns Ltd. He holds a
                         Bachelor’s degree in
@@ -276,7 +280,8 @@
             </div>
             <div class="col-span-6 lg:col-span-4 flex flex-col gap-4">
                 <p class="text-lg font-semibold">Get in Touch</p>
-                <p class="text-sm">Let us know how we can help you with your existing or future projects, and one of our
+                <p class="text-xs lg:text-sm">Let us know how we can help you with your existing or future projects, and
+                    one of our
                     sales or support representatives
                     will contact you shortly.</p>
                 <div class="w-36">
@@ -295,10 +300,11 @@
     <hr />
     <div class="flex items-center justify-center p-5">
         <div class="flex items-center justify-between gap-20">
-            <p class="text-sm font-semibold">Copyright Micusa Concerns Ltd @ 2024 &copy; All Rights Reserved</p>
-            <div class="flex gap-10 text-[16px]">
-                <span>English</span>
-                <span>Lagos, Nigeria</span>
+            <p class="text-xs lg:text-sm font-semibold">Copyright Micusa Concerns Ltd @ 2024 &copy; All Rights Reserved
+            </p>
+            <div class="flex gap-10 text-xs lg:text-sm">
+                <span><i class="ri-global-line mx-2"></i>English</span>
+                <span><i class="ri-map-pin-line mx-2"></i>Lagos, Nigeria</span>
             </div>
         </div>
     </div>
