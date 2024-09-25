@@ -33,7 +33,37 @@
 
         <ul class="hidden lg:block lg:flex gap-x-10 cursor-pointer">
             <li><a href="/" class="nav-link font-bold">Home</a></li>
-            <li><a href="/about-us.html" class="nav-link font-bold">About Us</a></li>
+            <li style="position: relative;">
+                <a id="dropdownButton" type="button"
+                    class="inline-flex justify-center w-full rounded-md px-4 text-sm font-bold">
+                    About Us
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <div id="dropdownMenu"
+                    class="hidden z-10 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+
+                    <div class="py-1">
+                        <a onclick="scrollToSection('our-vision')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our vision
+                            and mission</a>
+                        <a onclick="scrollToSection('core-values')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Core
+                            values</a>
+                        <a onclick="scrollToSection('about-micusta')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About
+                            micusta</a>
+                        <a onclick="scrollToSection('our-enablers')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our
+                            enablers</a>
+                    </div>
+                </div>
+            </li>
             <li><a href="/services.html" class="nav-link font-bold">Services</a></li>
             <li><a href="/leadership.html" class="nav-link font-bold">Key Persons</a></li>
         </ul>
@@ -71,7 +101,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20" style="background-color: rgba(244, 244, 244, 1);">
+    <div id="our-vision" class="p-5 lg:p-20" style="background-color: rgba(244, 244, 244, 1);">
         <div class="grid grid-cols-12 gap-5 p-10 mx-auto">
             <div class="col-span-12 md:col-span-6 lg:col-span-6 flex justify-start items-start flex-col">
                 <p class="text-3xl lg:text-5xl font-semibold">Our Vision</p>
@@ -97,7 +127,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20">
+    <div id="core-values" class="p-5 lg:p-20">
         <div class="px-10">
             <p class="text-2xl md:text-3xl lg:text-5xl font-semibold">Core Values</p>
             <p class="text-xs lg:text-sm my-5">Our approach to business is based on these core principles that shape
@@ -168,7 +198,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20" style="background-color: rgba(252, 252, 252, 1);">
+    <div id="about-micusta" class="p-5 lg:p-20" style="background-color: rgba(252, 252, 252, 1);">
         <div class="grid grid-cols-12 gap-5">
             <div class="col-span-12 lg:col-span-8 p-2 lg:p-10 order-2 lg:order-1">
                 <p class="my-2">
@@ -235,7 +265,8 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20">
+
+    <div id="our-enablers" class="p-5 lg:p-20">
         <div>
             <p class="text-2xl md:text-3xl lg:text-5xl font-semibold">Our Enablers</p>
             <p class="text-sm my-5">We recognize the following areas of emphasis as the key enablers for optimizing our

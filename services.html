@@ -34,7 +34,39 @@
         <ul class="hidden lg:block lg:flex gap-x-10 cursor-pointer">
             <li><a href="/" class="nav-link font-bold">Home</a></li>
             <li><a href="/about-us.html" class="nav-link font-bold hover:primary-text">About Us</a></li>
-            <li><a href="/services.html" class="nav-link font-bold hover:primary-text">Services</a></li>
+            <li style="position: relative;">
+                <a id="dropdownButton" type="button"
+                    class="inline-flex justify-center w-full rounded-md px-4 text-sm font-bold">
+                    Services
+                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <div id="dropdownMenu"
+                    class="hidden z-10 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+
+                    <div class="py-1">
+                        <a onclick="scrollToSection('corporate-finance')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Corporate finance</a>
+                        <a onclick="scrollToSection('supply-chain')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Supply chain
+                        </a>
+                        <a onclick="scrollToSection('civil-construction')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Civil
+                            construction</a>
+                        <a onclick="scrollToSection('intermediation')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Intermediation
+                        </a>
+                        <a onclick="scrollToSection('sectoral-focus')"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sectoral focus
+                        </a>
+                    </div>
+                </div>
+            </li>
             <li><a href="/leadership.html" class="nav-link font-bold hover:primary-text">Key Persons</a></li>
         </ul>
 
@@ -48,7 +80,31 @@
             <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
                 <a href="/index.html" class="block primary-text text-xl py-4 font-bold">Home</a>
                 <a href="/about-us.html" class="block primary-text text-xl py-4 font-bold">About</a>
-                <a href="/services.html" class="block primary-text text-xl py-4 font-bold">Services</a>
+                <a href="#" class="block primary-text text-xl py-4 font-bold">Services</a>
+
+                <div id="dropdownMenu" class="z-10">
+
+                    <div class="py-1">
+                        <a onclick="scrollToSection('corporate-finance')"
+                            class="block px-4 py-2 text-center cursor-pointer text-sm text-gray-700 hover:bg-gray-100">Corporate
+                            finance</a>
+                        <a onclick="scrollToSection('supply-chain')"
+                            class="block px-4 py-2 text-center cursor-pointer text-sm text-gray-700 hover:bg-gray-100">Supply
+                            chain
+                        </a>
+                        <a onclick="scrollToSection('civil-construction')"
+                            class="block px-4 py-2 text-center cursor-pointer text-sm text-gray-700 hover:bg-gray-100">Civil
+                            construction</a>
+                        <a onclick="scrollToSection('intermediation')"
+                            class="block px-4 py-2 text-center cursor-pointer text-sm text-gray-700 hover:bg-gray-100">Intermediation
+                        </a>
+                        <a onclick="scrollToSection('sectoral-focus')"
+                            class="block px-4 py-2 text-center cursor-pointer text-sm text-gray-700 hover:bg-gray-100">Sectoral
+                            focus
+                        </a>
+                    </div>
+                </div>
+
                 <a href="/leadership.html" class="block primary-text text-xl py-4 font-bold">Key Persons</a>
                 <a href="/contact-us.html" class="block primary-text text-xl py-4 font-bold">Contact</a>
                 <button id="closeMenu" class="text-white absolute top-4 right-4">
@@ -74,7 +130,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20">
+    <div id="corporate-finance" class="p-5 lg:p-20">
         <div>
             <p class="text-2xl md:text-3xl lg:text-5xl font-semibold">Corporate Finance</p>
             <p class="text-sm my-5">We offer strategic financial solutions to help businesses secure funding and manage
@@ -132,7 +188,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20" style="background-color: rgba(244, 244, 244, 1);">
+    <div id="supply-chain" class="p-5 lg:p-20" style="background-color: rgba(244, 244, 244, 1);">
         <div>
             <p class="text-5xl font-semibold">Supply Chain Management</p>
             <p class="text-sm my-5">We streamline supply chains to enhance efficiency, reduce costs, and ensure timely
@@ -194,7 +250,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20">
+    <div id="civil-construction" class="p-5 lg:p-20">
         <div>
             <p class="text-2xl md:text-3xl lg:text-5xl font-semibold">Civil Construction Projects</p>
             <p class="text-sm my-5">We deliver comprehensive civil construction solutions from design to execution,
@@ -254,7 +310,7 @@
         </div>
     </div>
 
-    <div class="p-5 lg:p-20">
+    <div id="intermediation" class="p-5 lg:p-20">
         <div>
             <p class="text-2xl md:text-3xl lg:text-5xl font-semibold">Intermediation</p>
             <p class="text-sm my-5">We facilitate seamless connections between businesses, buyers, and financial
@@ -265,7 +321,8 @@
                 <div class="col-span-12 md:col-span-4 lg:col-span-6 my-5">
                     <img src="assets/intemediation_section.png" alt="" width="100%" height="300px" />
                 </div>
-                <div class="col-span-12 md:col-span-8 lg:col-span-6 flex flex-col items-start justify-start my-12 p-10">
+                <div
+                    class="col-span-12 md:col-span-8 lg:col-span-6 flex flex-col items-center justify-center my-12 lg:p-28">
                     <p class="text-sm">
                         Our objective here is to match those with excess capacity or resources with those needing such
                         excess capacities and
@@ -308,7 +365,8 @@
         </div>
     </div>
 
-    <div style="width: 100vw; height: 50vh; background-color: #F9F8F6;" class="flex flex-col justify-center">
+    <div id="sectoral-focus" style="width: 100vw; height: 50vh; background-color: #F9F8F6;"
+        class="flex flex-col justify-center">
         <!-- <img src="assets/sectoral-focus.png" alt="banner-image" style="height: inherit;" /> -->
         <div class="flex flex-col gap-5 mx-16">
             <p class="text-4xl lg:text-5xl font-bold">Sectoral Focus</p>
